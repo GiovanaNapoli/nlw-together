@@ -5,12 +5,13 @@ import {
   widthPercentageToDP as wp,
   heightPercentageToDP as hp,
 } from "react-native-responsive-screen";
+import { FONTS } from "../../constants/theme";
 
 export const Container = styled.View`
   flex: 1;
   justify-content: center;
   align-items: center;
-  background-color: ${COLORS.background};
+  background-color: ${COLORS.secondary90};
 `;
 
 export const Thumb = styled.Image`
@@ -25,10 +26,14 @@ export const Title = styled.Text`
   text-align: center;
   font-size: ${hp(6)}px;
   margin-bottom: ${hp(2.25)}px;
+  font-family: ${FONTS.title700};
+  line-height: ${hp(6)}px;
 `;
 export const Subtitle = styled.Text`
   color: ${COLORS.heading};
   font-size: ${hp(2.28)}px;
   text-align: center;
   margin-bottom: ${hp(9.7)}px;
+  font-family: ${FONTS.title500};
+  line-height: ${hp(3.14)}px;
 `;

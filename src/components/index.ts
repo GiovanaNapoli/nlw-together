@@ -1,3 +1,4 @@
 import SingInButton from "./SingInButton";
+import Background from "./Background";
 
-export { SingInButton };
+export { SingInButton, Background };
